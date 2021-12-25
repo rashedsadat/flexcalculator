@@ -1,7 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import '../../assets/css/bootstrap.min.css';
 import { Button, Col, Container, Form, InputGroup, Row, ProgressBar, Card } from 'react-bootstrap';
-import '../../assets/css/style.css';
 import { Link } from 'react-router-dom';
 import { Range } from "react-range";
 
@@ -17,8 +15,8 @@ class Details extends Component {
                         <Col lg={8} md={8} sm={12} className='colSideBar topMargin'>
                             <h3 className='text-center title'>DO YOU HAVE UX DESIGN READY?</h3>
                             <div className='detailsDiv'>
-                                <Button variant="outline-secondary">Yes</Button>
-                                <Button variant="outline-secondary">No</Button>
+                                <Button className='detailsOptionButton' variant="outline-secondary">Yes</Button>
+                                <Button className='detailsOptionButton' variant="outline-secondary">No</Button>
                             </div>
                             <h3 className='text-center title'>HOW MANY WEBPAGES DO YOU WANT FOR YOUR PUBLIC WEBSITE?</h3>
                             <div className='detailsDiv'>
@@ -63,10 +61,10 @@ class Details extends Component {
                             
                             <h3 className='text-center title'>ANY PAYMENT GATEWAY INTEGRATION?</h3>
                             <div className='detailsDiv'>
-                                <Button variant="outline-secondary">Stripe</Button>
-                                <Button variant="outline-secondary">Paypal</Button>
-                                <Button variant="outline-secondary">Both</Button>
-                                <Button variant="outline-secondary">None</Button>
+                                <Button className='detailsOptionButton' variant="outline-secondary">Stripe</Button>
+                                <Button className='detailsOptionButton' variant="outline-secondary">Paypal</Button>
+                                <Button className='detailsOptionButton' variant="outline-secondary">Both</Button>
+                                <Button className='detailsOptionButton' variant="outline-secondary">None</Button>
                             </div>
                             <div className='prevNextDetails'>
                                 <Button className='enableButton previous'><Link className='enableButtonLink' to="/webtype">PREVIOUS</Link></Button>
