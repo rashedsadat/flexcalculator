@@ -10,53 +10,53 @@ class FrameWork extends Component {
             <Fragment>
                 <Container fluid={true}>
                     <Row>
-                        <Col lg={8} md={8} sm={12}>
-                        <h3 className='text-center'>I WANT MY SITE TO BE BUILT ON (CHOOSE FRAMEWORK)</h3>
-                            <Row>
-                                <Col lg={2} md={2} sm={0}></Col>
-                                <Col lg={8} md={8} sm={12}>
-                                    <Card>
+                        <Col lg={8} md={8} sm={12} className='colSideBar topMargin'>
+                        <h3 className='text-center title'>I WANT MY SITE TO BE BUILT ON (CHOOSE FRAMEWORK)</h3>
+                            {/* <Row> */}
+                                {/* <Col lg={3} md={3} sm={0}></Col> */}
+                                {/* <Col> */}
+                                    <Card className='card'>
                                         <Card.Body>
-                                            <Card.Title>Python</Card.Title>
-                                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </Card.Text>
+                                            <Card.Title className='cardTitle'>Python</Card.Title>
+                                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</Card.Text>
                                         </Card.Body>
                                     </Card>
-                                    <Card>
+                                    <Card className='card'>
                                         <Card.Body>
-                                            <Card.Title>Wordpress</Card.Title>
-                                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </Card.Text>
+                                            <Card.Title className='cardTitle'>Wordpress</Card.Title>
+                                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</Card.Text>
                                         </Card.Body>
                                     </Card>
-                                    <Card>
+                                    <Card className='card'>
                                         <Card.Body>
-                                            <Card.Title>Php Laravel</Card.Title>
-                                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </Card.Text>
+                                            <Card.Title className='cardTitle'>Php Laravel</Card.Title>
+                                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</Card.Text>
                                         </Card.Body>
                                     </Card>
-                                    <Card>
+                                    <Card className='card'>
                                         <Card.Body>
-                                            <Card.Title>Php (From Scratch)</Card.Title>
-                                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </Card.Text>
+                                            <Card.Title className='cardTitle'>Php (From Scratch)</Card.Title>
+                                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</Card.Text>
                                         </Card.Body>
                                     </Card>
-                                    <Card>
+                                    <Card className='card'>
                                         <Card.Body>
-                                            <Card.Title>Kajabi</Card.Title>
-                                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </Card.Text>
+                                            <Card.Title className='cardTitle'>Kajabi</Card.Title>
+                                            <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</Card.Text>
                                         </Card.Body>
                                     </Card>
-                                    <div>
-                                        <Button disabled={true}>PREVIOUS</Button>
-                                        <ProgressBar now={33} />
-                                        <Button><Link to="/webtype">NEXT</Link></Button>
+                                    <div className='prevNextDiv'>
+                                        <Button className='disableButton previous' disabled={true}>PREVIOUS</Button>
+                                        <ProgressBar className='progressBar' now={33} />
+                                        <Button className='enableButton next'><Link className='enableButtonLink' to="/webtype">NEXT</Link></Button>
                                     </div>
-                                </Col>
-                                <Col lg={2} md={2} sm={0}></Col>
-                            </Row>
+                                {/* </Col> */}
+                                {/* <Col lg={3} md={3} sm={0}></Col> */}
+                            {/* </Row> */}
                             
                         </Col>
-                        <Col lg={4} md={4} sm={12}>
-                            <h5>PLEASE INPUT ALL THE FIELDS TO<br/>SHOW ESTIMATED PRICE</h5>
+                        <Col lg={4} md={4} sm={12} className='topMargin'>
+                            <h5 className='rightHeading'>PLEASE INPUT ALL THE FIELDS TO<br/>SHOW ESTIMATED PRICE</h5>
                         </Col>
                     </Row>
                 </Container>
