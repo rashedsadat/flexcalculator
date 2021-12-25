@@ -14,61 +14,68 @@ class Details extends Component {
             <Fragment>
                 <Container fluid={true} className="text-center">
                     <Row>
-                        <Col lg={8} md={8} sm={12}>
-                            <h3 className='text-center'>DO YOU HAVE UX DESIGN READY?</h3>
-                            <InputGroup className="mb-3">
+                        <Col lg={8} md={8} sm={12} className='colSideBar topMargin'>
+                            <h3 className='text-center title'>DO YOU HAVE UX DESIGN READY?</h3>
+                            <div className='detailsDiv'>
                                 <Button variant="outline-secondary">Yes</Button>
                                 <Button variant="outline-secondary">No</Button>
-                            </InputGroup>
-                            <h3 className='text-center'>HOW MANY WEBPAGES DO YOU WANT FOR YOUR PUBLIC WEBSITE?</h3>
-                            <span>{this.state.values}px</span>
-                            <Range
-                                step={1}
-                                min={0}
-                                max={100}
-                                values={this.state.values}
-                                onChange={(values) => this.setState({ values })}
-                                renderTrack={({ props, children }) => (
-                                    <div
-                                        {...props}
-                                        style={{
-                                        ...props.style,
-                                        height: '6px',
-                                        width: '100%',
-                                        backgroundColor: '#ccc'
-                                        }}
-                                    >
-                                        {children}
-                                    </div>
-                                )}
-                                renderThumb={({ props }) => (
-                                    <div
-                                        {...props}
-                                        style={{
-                                        ...props.style,
-                                        height: '7px',
-                                        width: '7px',
-                                        borderRadius: '50%',
-                                        backgroundColor: 'white'
-                                        }}
-                                    />
-                                )}
-                            />
-                            <h3 className='text-center'>ANY PAYMENT GATEWAY INTEGRATION?</h3>
-                            <InputGroup className="mb-3">
+                            </div>
+                            <h3 className='text-center title'>HOW MANY WEBPAGES DO YOU WANT FOR YOUR PUBLIC WEBSITE?</h3>
+                            <div className='detailsDiv'>
+                                <span>{this.state.values} Pages</span>
+                                <Range
+                                    step={1}
+                                    min={0}
+                                    max={20}
+                                    allowOverlap={true}
+                                    values={this.state.values}
+                                    onChange={(values) => this.setState({ values })}
+                                    renderTrack={({ props, children }) => (
+                                        <div
+                                            {...props}
+                                            style={{
+                                            ...props.style,
+                                            height: '10px',
+                                            width: '50%',
+                                            borderRadius: '20px',
+                                            marginLeft: '250px',
+                                            backgroundColor: '#E8E8E9'
+                                            }}
+                                        >
+                                            {children}
+                                        </div>
+                                    )}
+                                    renderThumb={({ props }) => (
+                                        <div
+                                            {...props}
+                                            style={{
+                                            ...props.style,
+                                            height: '14px',
+                                            width: '14px',
+                                            borderRadius: '50%',
+                                            backgroundColor: 'white',
+                                            boxShadow: '0 0 12px 0 rgba(0, 115, 230, 0.2)'
+                                            }}
+                                        />
+                                    )}
+                                />
+                            </div>
+                            
+                            <h3 className='text-center title'>ANY PAYMENT GATEWAY INTEGRATION?</h3>
+                            <div className='detailsDiv'>
                                 <Button variant="outline-secondary">Stripe</Button>
                                 <Button variant="outline-secondary">Paypal</Button>
                                 <Button variant="outline-secondary">Both</Button>
                                 <Button variant="outline-secondary">None</Button>
-                            </InputGroup>
-                            <div>
-                                <Button><Link to="/webtype">PREVIOUS</Link></Button>
-                                <ProgressBar now={100} />
-                                <Button disabled={true}>NEXT</Button>
+                            </div>
+                            <div className='prevNextDetails'>
+                                <Button className='enableButton previous'><Link className='enableButtonLink' to="/webtype">PREVIOUS</Link></Button>
+                                <ProgressBar className='progressBar' now={100} />
+                                <Button className='disableButton next' disabled={true}>NEXT</Button>
                             </div>
                         </Col>
-                        <Col lg={4} md={4} sm={12}>
-                            <Card>
+                        <Col lg={4} md={4} sm={12} className='topMargin'>
+                            <Card className='detailsCard'>
                                 <Card.Body>
                                     <Card.Title>Est Cost</Card.Title>
                                     <Card.Subtitle className="mb-2">$3,000 - $3,500</Card.Subtitle>
