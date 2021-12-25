@@ -10,8 +10,8 @@ class AppRouter extends Component {
             <Fragment>
                 <Routes>
                     <Route exact path="/" element={<ChooseFrameworkPage/>} />
-                    <Route exact path="/webtype" element={<WebsiteTypePage/>} />
-                    <Route exact path="/details" element={<ConfirmationPage/>} />
+                    <Route path="/webtype" element={<WebsiteTypePage/>} />
+                    <Route path="/details" element={<ConfirmationPage/>} />
                 </Routes>
             </Fragment>
         );
