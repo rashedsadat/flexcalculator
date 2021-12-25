@@ -1,6 +1,44 @@
 .colSideBar{
     height: 100vh;
-    border-right: 1px solid #3F3F3F;
+    border-right: 2px solid #ECECEC;
+}
+
+.navContainer{
+    border-bottom: 2px solid #ECECEC;
+}
+
+.nav{
+    float: left;
+    text-align: center;
+}
+
+.navTitle{
+    /* display: flex; */
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 300;
+    color: #212529;
+    bottom: 20px;
+    padding-left: 50px;
+}
+
+.navLink{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: bold;
+    color: #13A2E2;
+    margin-bottom: 5px;
+}
+
+.navLink:hover{
+    text-decoration: none;
+    color: #13A2E2;
+}
+
+.navIcon{
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .topMargin{
@@ -71,8 +109,8 @@
 }
 
 .progressBar{
-    padding: 2px;
-    border-radius: 20px;
+    padding: 3px;
+    border-radius: 5px !important;
     float: left;
     width: 150px;
     margin-top: 10px;
@@ -101,8 +139,46 @@
 }
 
 .detailsCard{
-    height: 250px;
+    height: 275px;
     width: 380px;
     margin-left: 50px !important;
     box-shadow: 0 0 4px 0 rgba(0, 115, 230, 0.2);
+}
+
+.detailsCardTitle{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #13A2E2;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+.detailsPrice{
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #212529;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.detailsCardDetail{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: #3F3F3F;
+    font-weight: 300;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.detailsButton{
+    position: absolute;
+    bottom: 55px;
+    margin-left: -120px !important;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Poppins';
+    background-color: #13A2E2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0;
 }

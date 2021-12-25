@@ -77,14 +77,14 @@ class Details extends Component {
                         <Col lg={4} md={4} sm={12} className='topMargin'>
                             <Card className='detailsCard'>
                                 <Card.Body>
-                                    <Card.Title>Est Cost</Card.Title>
-                                    <Card.Subtitle className="mb-2">$3,000 - $3,500</Card.Subtitle>
-                                    <Card.Text>
+                                    <Card.Title className='detailsCardTitle'>Est Cost</Card.Title>
+                                    <Card.Subtitle className="detailsPrice">$3,000 - $3,500</Card.Subtitle>
+                                    <Card.Text className='detailsCardDetail'>
                                     "This cost will include 2 rounds of corrections at UI design stage, and once the design is finalized, we will proceed to development. Project will be divided into 2 - 3 milestone payments."
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-                            <Button variant="outline-secondary">START YOUR PROJECT NOW</Button>
+                            <Button className='detailsButton' variant="outline-secondary">START YOUR PROJECT NOW</Button>
                         </Col>
                     </Row>
                 </Container>

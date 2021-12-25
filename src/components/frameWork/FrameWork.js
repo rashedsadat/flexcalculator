@@ -1,7 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import '../../assets/css/bootstrap.min.css';
 import { Button, Card, Col, Container, Row, ProgressBar } from 'react-bootstrap';
-import '../../assets/css/style.css';
 import { Link } from 'react-router-dom';
 
 class FrameWork extends Component {
